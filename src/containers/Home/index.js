@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Balance from '../../components/Balance';
 
 const Home = (props) => {
   return (
     <div>
-      <div>Hello, world! I am home!</div>
-      <Link to='/abc'>Any other route!</Link>
+      <Balance amount={100} currency="PKR" />
     </div>
   );
 };
