@@ -4,21 +4,11 @@ import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { createBrowserHistory } from 'history';
 import { routerMiddleware } from 'connected-react-router';
-import JSONTruncate from 'json-truncate';
 import createRootReducer from './redux/rootReducer';
 
 export const history = createBrowserHistory();
 
-const logger = createLogger({
-  actionTransformer: action => JSONTruncate(action, {
-    maxDepth: 2,
-    replace: '[Truncated]'
-  }),
-  stateTransformer: state => JSONTruncate(state, {
-    maxDepth: 3,
-    replace: '[Truncated]'
-  })
-});
+const logger = createLogger();
 
 export default function configureStore(initialState = {}) {
   const middlewares = [
