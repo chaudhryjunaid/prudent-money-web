@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "connected-react-router": "^6.2.2",
     "json-truncate": "^1.3.0",
     "node-sass": "^4.11.0",
