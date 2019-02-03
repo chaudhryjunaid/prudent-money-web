@@ -1,0 +1,30 @@
+.step {
+  .index {
+    color: white;
+    font-size: 20px;
+    background-color: #6699ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: 'center';
+  }
+
+  .text {
+    font-size: 18px;
+    color: black;
+  }
+
+  .actionBtn {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+  }
+
+  .done {
+    color: lightseagreen;
+  }
+
+  .incomplete {
+    color: lightcoral
+  }
+}

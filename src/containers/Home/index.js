@@ -1,10 +1,27 @@
 import React from 'react';
-import Balance from '../../components/Balance';
+import  * as R from 'ramda';
+import Step from '../../components/Step';
+
+const steps = [
+  {text: 'Step1', action: function() { console.log(this.text + 'hi') }, completed: false},
+  {text: 'Step2', action: function() { console.log(this.text + 'hi') }, completed: true}
+];
+const indexedMap = R.addIndex(R.map);
 
 const Home = (props) => {
   return (
     <div>
-      <Balance amount={100} currency="PKR" />
+      {indexedMap((step, idx) => {
+        return (
+          <Step 
+            key={idx}
+            idx={idx + 1}
+            text={step.text}
+            action={step.action}
+            completed={step.completed}
+          />
+        );
+      }, steps)}
     </div>
   );
 };
