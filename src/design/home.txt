@@ -1,0 +1,10 @@
+Current Asset Balance
+Required Balance
+Average Inflows (Table)
+Average Expenses (Table)
+Average Yearly Inflation 
+Average Yearly Profit
+Financial Goals (Table)
+Results Overview (Time to completion of goals)
+Results
+Export
