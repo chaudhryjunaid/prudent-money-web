@@ -1,23 +1,33 @@
 .step {
-  .index {
-    color: white;
-    font-size: 20px;
-    background-color: #6699ff;
+  font-size: 18px;
+  background-color: darkcyan;
+  border-left: 4px solid turquoise;
+  margin-bottom: 3px;
+  padding: 7px;
+  .index-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    text-align: 'center';
+  }
+
+  .index {
+    color: white;
+    
   }
 
   .text {
-    font-size: 18px;
-    color: black;
+    text-align: left;
+    color: white;
   }
 
   .actionBtn {
-    background-color: green;
+    background-color: lightsteelblue;
     color: white;
-    font-size: 20px;
+    width: 100px;
   }
 
   .done {

@@ -6,7 +6,9 @@ export default (props) => {
   return (
     <div style={{marginRight: '15px', marginLeft: '15px'}}>
       <div className="step row">
-        <div className="col-md-1"><div className="index">{idx}</div></div>
+        <div className="col-md-1">
+          <div className="index-container"><div className="index">{idx}</div></div>
+        </div>
         <div className="col-md-7 text">{text}</div>
         <div className="col-md-2">
           <button className="actionBtn" onClick={action}>{ completed ? 'Start' : 'Edit' }</button>
