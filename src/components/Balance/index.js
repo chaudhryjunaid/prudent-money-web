@@ -1,5 +1,5 @@
 import React from 'react';
-import './balance.scss';
+import './Balance.scss';
 
 export default (props) => {
   const { amount = 0 } = props;
