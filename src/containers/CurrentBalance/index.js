@@ -36,7 +36,7 @@ class CurrentBalance extends Component {
           <Balance amount={balance} />
         </div>
         <div>
-          <BalanceInput value={balance} onChange={this.setBalance} />
+          <BalanceInput value={balance.toString()} onChange={this.setBalance} />
         </div>
       </div>
     );

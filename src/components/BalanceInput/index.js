@@ -4,6 +4,6 @@ import './BalanceInput.scss';
 export default (props) => {
   const { value, onChange } = props;
   return (
-    <input type="number" value={value} onChange={ onChange } />
+    <input type="number" value={value} onChange={onChange} />
   );
 }
