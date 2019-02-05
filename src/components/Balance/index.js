@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatBalance } from '../../utils';
 import './Balance.scss';
 
 export default (props) => {
@@ -6,8 +7,7 @@ export default (props) => {
   const { currency = 'USD' } = props;
   return (
     <span className="balance">
-      <span className="amount">{amount}</span>
-      <span className="currency">{currency}</span>
+      <span className="amount">{formatBalance(amount, currency)}</span>
     </span>
   );
 }

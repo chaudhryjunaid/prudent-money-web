@@ -16,7 +16,7 @@ class CurrentBalance extends Component {
 
   setBalance(event) {
     let { target: { value: balance } } = event;
-    balance = parseInt(balance, 10);
+    balance = parseFloat(balance, 10);
     if (isNaN(balance)) {
       balance = 0;
     }
