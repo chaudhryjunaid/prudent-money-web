@@ -5,6 +5,7 @@ import { push } from 'connected-react-router';
 import Balance from '../../components/Balance';
 import BalanceInput from '../../components/BalanceInput';
 import { setBalance } from '../../redux/currentBalanceReducer';
+import './CurrentBalance.scss';
 
 class CurrentBalance extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class CurrentBalance extends Component {
     const { push } = this.props;
 
     return (
-      <div className="current-balance">
+      <div className="currentBalance">
         <div>
           Enter the current balance in your bank:
         </div>
@@ -40,7 +41,10 @@ class CurrentBalance extends Component {
           <BalanceInput value={balance.toString()} onChange={this.setBalance} />
         </div>
         <div>
-          <button onClick={() => push('/')}>
+          <button 
+            className="backBtn"
+            onClick={() => push('/')}
+          >
             Back
           </button>
         </div>
