@@ -7,7 +7,7 @@ export default (props) => {
   const { currency = 'USD' } = props;
   return (
     <span className="balance">
-      <span className="amount">{formatBalance(amount, currency)}</span>
+      <span className={`amount ${amount >= 0 ? 'positive' : 'negative'}`}>{formatBalance(amount, currency)}</span>
     </span>
   );
 }
