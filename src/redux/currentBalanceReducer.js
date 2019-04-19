@@ -1,6 +1,6 @@
 import { createAction, handleAction } from 'redux-actions';
 
-const defaultState = 0;
+const defaultState = null;
 
 export const setBalance = createAction('BALANCE_CHANGED');
 

@@ -29,6 +29,8 @@ class CurrentBalance extends Component {
     const { balance } = this.props;
     const { push } = this.props;
 
+    const value = balance && balance.toString() || '';
+
     return (
       <div className="currentBalance">
         <div>
@@ -38,7 +40,7 @@ class CurrentBalance extends Component {
           <Balance amount={balance} />
         </div>
         <div>
-          <BalanceInput value={balance.toString()} onChange={this.setBalance} />
+          <BalanceInput value={value} onChange={this.setBalance} />
         </div>
         <div>
           <button 

@@ -8,11 +8,11 @@ const indexedMap = R.addIndex(R.map);
 
 class Home extends Component {
   getSteps() {
-    const { push } = this.props;
+    const { balance, push } = this.props;
     return [{
       text: 'Tell us your current balance',
       action: () => push('/current-balance'),
-      completed: false
+      completed: !!balance
     }, {
       text: 'Tell us your current balance',
       action: () => {},
@@ -43,5 +43,10 @@ class Home extends Component {
   }
 }
 
+const mapStateToProps = (state) => ({
+  balance: state.balance
+});
+
 const mapDispatchToProps = { push };
-export default connect(null, mapDispatchToProps)(Home);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

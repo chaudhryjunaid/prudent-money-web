@@ -13,7 +13,7 @@ export default (props) => {
         <div className="col-md-2">
           <button className="actionBtn" onClick={action}>{ completed ? 'Edit' : 'Start' }</button>
         </div>
-        <div className={`col-md-2 ${completed ? 'done' : 'incomplete'}`}>{completed ? 'tick' : 'incomplete'}</div>
+        <div className={`col-md-2 ${completed ? 'done' : 'incomplete'}`}>{completed ? 'completed' : 'incomplete'}</div>
       </div>
     </div>
   );
